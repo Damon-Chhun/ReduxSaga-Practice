@@ -5,7 +5,7 @@ const INITIAL_STATE = {
 };
 
 const cardReducer = (state = INITIAL_STATE, action) => {
-  const { type, payload } = action;
+  const { type } = action;
 
   switch (type) {
     case cardActionTypes.increment:
