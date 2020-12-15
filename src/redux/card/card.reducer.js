@@ -8,7 +8,7 @@ const cardReducer = (state = INITIAL_STATE, action) => {
   const { type } = action;
 
   switch (type) {
-    case cardActionTypes.increment:
+    case "INCREMENT_FROM_SAGA":
       return {
         ...state,
         count: state.count + 1
